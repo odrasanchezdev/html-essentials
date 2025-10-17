@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica: Listas</title>
+</head>
+<body>
+  <h1>Tipos de listas en HTML</h1>
+
+<!-- 
+  En HTML, las listas se utilizan para organizar información de manera estructurada.
+  Existen tres tipos principales de listas:
+
+  1. <ul>  — Lista desordenada (unordered list)
+     Se usa cuando el orden de los elementos NO importa.
+     Ejemplo: lista de compras, características, ingredientes.
+
+  2. <ol>  — Lista ordenada (ordered list)
+     Se usa cuando el orden de los elementos SÍ importa.
+     Ejemplo: pasos de una receta, instrucciones, rankings.
+
+  3. <dl>  — Lista de definición (definition list)
+     Se usa para pares de términos y descripciones.
+     Ejemplo: diccionarios, glosarios, listas de conceptos.
+-->
+
+<!-- ====================================================== -->
+<!-- LISTA DESORDENADA (<ul>) -->
+<!-- ====================================================== -->
+
+<p><strong>Lista desordenada:</strong> Ejemplo - Lista de compras</p>
+
+<!-- 
+  <ul> crea una lista sin orden específico.
+  Cada elemento se define con la etiqueta <li> (list item).
+-->
+<ul>
+  <li>Tomate</li>
+  <li>Jitomate</li>
+  <li>Huevo</li>
+  <li>Jamón</li>
+  <li>Salchicha</li>
+  <li>Crema</li>
+  <li>Tocino</li>
+  <li>Miel</li>
+</ul>
+
+<!-- ====================================================== -->
+<!-- LISTA DESORDENADA EN UN MENÚ DE NAVEGACIÓN -->
+<!-- ====================================================== -->
+
+<p><strong>Otro ejemplo:</strong> uso de una lista desordenada para crear un menú de navegación.</p>
+
+<!-- 
+  Las etiquetas <nav> y <ul> suelen usarse juntas para crear menús.
+  Cada <li> contiene un enlace (<a>) que lleva a una sección o página diferente.
+-->
+<nav>
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Sobre mí</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- ====================================================== -->
+<!-- LISTA ORDENADA (<ol>) -->
+<!-- ====================================================== -->
+
+<p><strong>Lista ordenada:</strong> Ejemplo - Pasos para preparar un sándwich</p>
+
+<!-- 
+  <ol> crea una lista donde el orden de los elementos es importante.
+  Cada elemento <li> se numera automáticamente.
+-->
+<ol>
+  <li>Tostar el pan</li>
+  <li>Untar mayonesa</li>
+  <li>Agregar jamón y queso</li>
+  <li>Colocar lechuga y tomate</li>
+  <li>Cerrar el sándwich</li>
+  <li>Cortar por la mitad y servir</li>
+</ol>
+
+<!-- ====================================================== -->
+<!-- LISTA DE DEFINICIÓN (<dl>) -->
+<!-- ====================================================== -->
+
+<p><strong>Lista de definición:</strong> Ejemplo - Glosario de términos</p>
+
+<!-- 
+  <dl> (definition list) se usa para mostrar términos y sus descripciones.
+  - <dt>: término (definition term)
+  - <dd>: definición o descripción (definition description)
+-->
+<dl>
+  <dt>HTML</dt>
+  <dd>Lenguaje de marcado utilizado para estructurar páginas web.</dd>
+
+  <dt>CSS</dt>
+  <dd>Lenguaje de hojas de estilo utilizado para dar formato y diseño al contenido HTML.</dd>
+
+  <dt>JavaScript</dt>
+  <dd>Lenguaje de programación que permite agregar interactividad a las páginas web.</dd>
+</dl>
+
+
+</body>
+</html>
