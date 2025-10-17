@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica: Atributos comunes</title>
+
+  <style>
+    /* 
+    Definición de una clase CSS llamada "parrafo-1".
+    Las clases se utilizan para aplicar estilos a uno o varios elementos HTML.
+    En este caso, el texto de los elementos con esta clase será de color rojo.
+  */
+    .parrafo-1 {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    En esta sección se ejemplifican algunos atributos globales disponibles en HTML.
+    Estos atributos pueden usarse en casi todas las etiquetas HTML.
+    
+    Atributos mostrados:
+      - class: Se usa para aplicar estilos definidos en CSS o seleccionar elementos desde JS.
+      - id: Identificador único de un elemento, útil para manipularlo desde JavaScript o navegar mediante anclas.
+      - title: Proporciona información adicional sobre el elemento, mostrada al pasar el cursor (tooltip).
+      - data-*: Permite almacenar datos personalizados en elementos HTML (muy útil para JavaScript).
+  -->
+
+  <!-- 
+    Ejemplo de uso del atributo "class":
+    Se aplica la clase "parrafo-1", que está definida en el CSS para mostrar el texto en color rojo.
+  -->
+  <p class="parrafo-1">Ejemplo de clases</p>
+
+  <!-- 
+    Ejemplo del atributo "id":
+    "id" debe ser único en el documento.
+    Se usará en el script para obtener este párrafo y mostrar su contenido en la consola.
+  -->
+  <p id="parrafo-2">Ejemplo de Identificador</p>
+
+  <!-- 
+    Ejemplo del atributo "title":
+    Al colocar el cursor sobre el texto, aparece un mensaje (tooltip) con la descripción definida.
+    Este atributo mejora la accesibilidad y proporciona información contextual al usuario.
+  -->
+  <p title="Este es un ejemplo del atributo Title">Ejemplo de Title</p>
+
+  <!-- 
+    Ejemplo del atributo "data-*":
+    Los atributos personalizados "data-" permiten almacenar información que puede ser leída por JavaScript.
+    En este caso, "data-ejemplo" contiene el valor "Datos de ejemplo".
+  -->
+  <p id="parrafo-4" data-ejemplo="Datos de ejemplo">Ejemplo de Data-*</p>
+
+  <!-- 
+    Bloque de script en JavaScript:
+    Se usa para acceder a los elementos HTML mediante sus identificadores (id)
+    y mostrar información en la consola del navegador. Para acceder a la consola: 
+    presiona F12 o botón derecho y en el menú, busca la opción "Inspeccionar". En la segunda barra podrás encontrar una tira de elementos comenzando por "Elements, Console...", ingresa a la segunda pestaña "Console"
+  -->
+  <script>
+    // Obtiene el elemento con id "parrafo-2"
+    const p1 = document.getElementById('parrafo-2')
+    // Muestra el texto del párrafo en la consola
+    console.log(p1.textContent)
+
+    // Obtiene el elemento con id "parrafo-4"
+    const p4 = document.getElementById('parrafo-4')
+    // Accede al valor del atributo personalizado data-ejemplo y lo muestra en la consola
+    console.log(p4.dataset.ejemplo)
+  </script>
+</body>
+</body>
+
+</html>
